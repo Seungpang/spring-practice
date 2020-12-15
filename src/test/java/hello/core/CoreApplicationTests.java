@@ -1,13 +1,13 @@
-package com.seungpang.webmvc;
+package hello.core;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebmvcApplicationTests {
+class CoreApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }
