@@ -8,11 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Component("/springmvc/old-controller")
-public class oldController implements Controller {
+public class OldController implements Controller {
 
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        System.out.println("oldController.handleRequest");
-        return null;
+        System.out.println("OldController.handleRequest");
+        return new ModelAndView("new-form");
     }
 }
