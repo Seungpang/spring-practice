@@ -1,4 +1,4 @@
-package hello.springmvc.basic;
+package hello.springmvc.basic.response;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
