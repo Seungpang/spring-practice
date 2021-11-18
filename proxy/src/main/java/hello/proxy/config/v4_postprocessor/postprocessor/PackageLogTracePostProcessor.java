@@ -23,7 +23,7 @@ public class PackageLogTracePostProcessor implements BeanPostProcessor {
         log.info("param beanName={} bean={}",beanName, bean.getClass());
 
         //프록시 적용 대상 여부 체크
-        //프록시 적용 대상이 아니면 워놉ㄴ을 그대로 진행
+        //프록시 적용 대상이 아니면 원본을 그대로 진행
         String packageName = bean.getClass().getPackageName();
         if (!packageName.startsWith(basePackage)) {
             return bean;
