@@ -15,6 +15,7 @@ import me.seungpang.aop.order.aop.AspectV2;
 import me.seungpang.aop.order.aop.AspectV3;
 import me.seungpang.aop.order.aop.AspectV4Pointcut;
 import me.seungpang.aop.order.aop.AspectV5Order;
+import me.seungpang.aop.order.aop.AspectV6Advice;
 
 @Slf4j
 @SpringBootTest
@@ -22,7 +23,8 @@ import me.seungpang.aop.order.aop.AspectV5Order;
 //@Import(AspectV2.class)
 //@Import(AspectV3.class)
 //@Import(AspectV4Pointcut.class)
-@Import({AspectV5Order.LogAspect.class, AspectV5Order.TxAspect.class})
+//@Import({AspectV5Order.LogAspect.class, AspectV5Order.TxAspect.class})
+@Import(AspectV6Advice.class)
 public class AopTest {
 
 	@Autowired
