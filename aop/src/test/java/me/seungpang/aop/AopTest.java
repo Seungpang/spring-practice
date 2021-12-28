@@ -11,10 +11,12 @@ import lombok.extern.slf4j.Slf4j;
 import me.seungpang.aop.order.OrderRepository;
 import me.seungpang.aop.order.OrderService;
 import me.seungpang.aop.order.aop.AspectV1;
+import me.seungpang.aop.order.aop.AspectV2;
 
 @Slf4j
 @SpringBootTest
-@Import(AspectV1.class)
+//@Import(AspectV1.class)
+@Import(AspectV2.class)
 public class AopTest {
 
 	@Autowired
