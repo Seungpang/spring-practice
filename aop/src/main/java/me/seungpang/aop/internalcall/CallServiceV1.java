@@ -19,7 +19,7 @@ public class CallServiceV1 {
 
 	public void external() {
 		log.info("call external");
-		internal(); //this.internal(); 내부 메서드 호출
+		callServiceV1.internal(); //this.internal(); 내부 메서드 호출
 	}
 
 	public void internal() {
