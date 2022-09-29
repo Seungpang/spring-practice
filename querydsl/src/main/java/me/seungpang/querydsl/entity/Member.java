@@ -47,7 +47,7 @@ public class Member {
         }
     }
 
-    private void chageTeam(final Team team) {
+    public void chageTeam(final Team team) {
         this.team = team;
         team.getMembers().add(this);
     }
